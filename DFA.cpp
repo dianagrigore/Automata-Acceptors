@@ -47,7 +47,7 @@ int main() {
         strcpy(cuvant, cuvinte[it]);
         int p = 0, stare_curenta = 0;
 
-        while(p < strlen(cuvant)-1 && tranzitii[stare_curenta][gaseste_poz(cuvant[p], alfabet, m)]!=-1)
+        while(p < strlen(cuvant) && tranzitii[stare_curenta][gaseste_poz(cuvant[p], alfabet, m)]!=-1)
         {
             stare_curenta = tranzitii[stare_curenta][gaseste_poz(cuvant[p], alfabet, m)];
             p++;
